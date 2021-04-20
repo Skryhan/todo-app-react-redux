@@ -1,0 +1,128 @@
+.todo-wrapper{
+    margin: 10vh auto 0;
+    width: 50vw;
+}
+.todo_content {
+    padding: 30px;
+    background-color: #fff;
+    min-height: 50vh;
+}
+.add__task {
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-end;
+}
+.plus {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 15px 15px 0;
+    border: 2px solid #121212;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 2vh;
+    text-align: center;
+    line-height: 1;
+    transition: all 0.2s linear;
+}
+.plus:hover {
+    color: #fff;
+    background-color: #121212;
+}
+.popap {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.popap.show {
+    display: block;
+}
+.modal {
+    position: absolute;
+    width: 40%;
+    background: #fff;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: default;
+}
+.modal__main {
+    padding: 20px;
+    box-sizing: border-box;
+}
+.modal__main label {
+    display: block;
+    margin-bottom: 20px;
+}
+.modal__main label p {
+    display: block;
+    font-size: 20px;
+}
+.modal__main label span {
+    color: #d92136;
+}
+.modal__main label input {
+    width: 100%;
+    padding: 5px 5px 5px 13px;
+    border: 1px solid #555;
+    outline: none;
+    font: 500 14px Roboto, sans-serif;
+    color: #121212;
+}
+.input.error {
+    border-color: #d92136;
+}
+input::placeholder {
+    text-align: left;
+}
+textarea::placeholder {
+    text-align: left;
+}
+.modal__main label textarea {
+    min-width: 100%;
+    min-height: 10vh;
+    max-height: 10vh;
+    max-width: 100%;
+    padding: 5px 5px 5px 13px;
+    border: 1px solid #555;
+    outline: none;
+    font: 500 14px Roboto, sans-serif;
+    color: #121212;
+}
+.modal__main label input.error {
+    border-color: red;
+}
+.modal__btn {
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    display: inline-block;
+    border: 0;
+    background-color: #5e3ddf;
+    color: #fff;
+    width: 25%;
+    padding: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 18px;
+    background-color: #121212;
+}
+.btn:last-child {
+    margin-right: 0;
+}
+.btn.ok:hover {
+    background-color: #19e65d;
+}
+.btn.close:hover {
+    background-color: #d92136;
+} 

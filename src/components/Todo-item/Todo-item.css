@@ -1,0 +1,37 @@
+.task {
+    border: 2px solid #5e3ddf;
+    padding: 5px 15px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.completed {
+    text-decoration: line-through;
+    color: #ccc;
+}
+.task__cont {
+    width: 70%;
+}
+
+.task__btn_check{
+    display: none;
+}
+.task__btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #121212;
+    background-color: transparent;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.task__btn:hover {
+    background-color: #121212;
+    color: #fff;
+}
+.icon{
+    padding-top: 2px;
+    font-size: 2vh;
+}
